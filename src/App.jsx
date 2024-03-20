@@ -1,21 +1,10 @@
 import Form from "./components/Form"
 import Header from "./components/Header"
 import { useState } from "react"
+import Results from "./components/Results"
 function App() {
 
-  const [test,setTest] = useState({
-    // name:"",
-    // email:"",
-    // phone:null,
-    // school_name:"",
-    // title_of_study:"",
-    // period_of_study:"",
-    // company_name:"",
-    // position_title:"",
-    // responsability:"",
-    // period:""
-
-  })
+  const [test,setTest] = useState("")
   function handleInputChange(e){
     const target = e.target
     const value = e.value
@@ -29,9 +18,9 @@ function App() {
   return (
     <>
     <Header></Header>
-    <h1>Cv Application</h1>
     <main>
-      <Form test={test} setTest={setTest} handleOnInputChange={handleInputChange}></Form>
+      {/* <Form test={test} setTest={setTest} handleOnInputChange={handleInputChange}></Form>
+      <Results test={test}></Results> */}
     </main>
     </>
   )
