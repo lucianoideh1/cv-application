@@ -4,11 +4,16 @@ import { useState } from "react"
 function App() {
 
   const [test,setTest] = useState("")
-  const objeto = {
+  // const objeto = {
+  //   name:"nombre",
+  //   email:"nombre@gmail.com",
+  //   phone:1122334455,
+  // }
+  const [objeto,setObjeto] = useState({
     name:"nombre",
     email:"nombre@gmail.com",
     phone:1122334455,
-  }
+  })
 
   return (
     <>
@@ -27,7 +32,7 @@ function App() {
         {test}
       </div>
     </main>
-    <Objetos  test={{...objeto}}></Objetos>
+    <Objetos  test={objeto}></Objetos>
     </>
   )
 }
