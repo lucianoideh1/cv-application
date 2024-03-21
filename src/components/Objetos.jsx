@@ -1,12 +1,12 @@
 const Objetos = (test) => {
     console.log(test)
-    const { name, phone, email }  = test.test
+    const { name, email, phone }  = test.test
     return (
-    <div>objeto
+    <div className="results">
         <ul>
             <li>{name}</li>
-            <li>{phone}</li>
             <li>{email}</li>
+            <li>{phone}</li>
         </ul>
     </div>
   )

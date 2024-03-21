@@ -3,42 +3,47 @@ import Objetos from "./components/Objetos"
 import { useState } from "react"
 function App() {
 
-  const [test,setTest] = useState("")
-  // const objeto = {
-  //   name:"nombre",
-  //   email:"nombre@gmail.com",
-  //   phone:1122334455,
-  // }
   const [objeto, setObjeto] = useState({
     name:"nombre",
     email:"nombre@gmail.com",
     phone:1122334455,
   })
 
+  function handleOnChange(e) {
+    setObjeto({
+      ...objeto,
+      [e.target.name]:e.target.value
+    })
+  }
+
   return (
     <>
     <Header></Header>
     <main>
       <form>
-        <label>Name: 
-          <input type="text" 
-          name="name"
-          value={test}
-          onChange={e => setTest(e.target.value)}/>
-        </label>
-        <br />
         <label>Nombre: 
           <input type="text" 
-          name="name2"
+          name="name"
           value={objeto.name}
-          onChange={(e) => {setObjeto({
-            ...objeto,
-            name: e.target.value})}}/>
+          onChange={handleOnChange}/>
         </label>
+        <br />
+        <label>Email: 
+          <input type="email" 
+          name="email"
+          value={objeto.email}
+          onChange={handleOnChange}/>
+        </label>
+        <br />
+        <label>Phone: 
+          <input type="number" 
+          name="phone"
+          value={objeto.phone}
+          onChange={handleOnChange}/>
+        </label>
+        <br />
+
       </form>
-      <div className="results">
-        {test}
-      </div>
     </main>
     <Objetos  test={objeto}></Objetos>
     </>
