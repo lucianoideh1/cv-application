@@ -1,9 +1,14 @@
 import Header from "./components/Header"
+import Objetos from "./components/Objetos"
 import { useState } from "react"
 function App() {
 
   const [test,setTest] = useState("")
-
+  const objeto = {
+    name:"nombre",
+    email:"nombre@gmail.com",
+    phone:1122334455,
+  }
 
   return (
     <>
@@ -22,6 +27,7 @@ function App() {
         {test}
       </div>
     </main>
+    <Objetos  {...objeto}></Objetos>
     </>
   )
 }
