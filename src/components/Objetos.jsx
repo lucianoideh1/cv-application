@@ -1,6 +1,6 @@
-const Objetos = (objeto) => {
-
-    const { name, phone, email }  = objeto
+const Objetos = (test) => {
+    console.log(test)
+    const { name, phone, email }  = test.test
     return (
     <div>objeto
         <ul>

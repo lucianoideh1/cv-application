@@ -27,7 +27,7 @@ function App() {
         {test}
       </div>
     </main>
-    <Objetos  {...objeto}></Objetos>
+    <Objetos  test={{...objeto}}></Objetos>
     </>
   )
 }
