@@ -9,7 +9,7 @@ function App() {
   //   email:"nombre@gmail.com",
   //   phone:1122334455,
   // }
-  const [objeto,setObjeto] = useState({
+  const [objeto, setObjeto] = useState({
     name:"nombre",
     email:"nombre@gmail.com",
     phone:1122334455,
@@ -27,6 +27,14 @@ function App() {
           onChange={e => setTest(e.target.value)}/>
         </label>
         <br />
+        <label>Nombre: 
+          <input type="text" 
+          name="name2"
+          value={objeto.name}
+          onChange={(e) => {setObjeto({
+            ...objeto,
+            name: e.target.value})}}/>
+        </label>
       </form>
       <div className="results">
         {test}
