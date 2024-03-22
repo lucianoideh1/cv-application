@@ -1,4 +1,4 @@
-const Objetos = (test) => {
+const Result = (test) => {
     console.log(test)
     const { name, email, phone }  = test.test
     return (
@@ -12,4 +12,4 @@ const Objetos = (test) => {
   )
 }
 
-export default Objetos
+export default Result

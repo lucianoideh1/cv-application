@@ -1,15 +1,20 @@
 import About from "./components/About"
 import Footer from "./components/Footer"
+import Form from "./components/Form"
 import Header from "./components/Header"
-import Objetos from "./components/Objetos"
+import Result from "./components/Result"
 import { useState } from "react"
 function App() {
 
+  const footer = false
   const [objeto, setObjeto] = useState({
     name:"nombre",
     email:"nombre@gmail.com",
     phone:1122334455,
   })
+  
+  // past_experiences:[{},{},{}]
+  // study_experience:[{},{},{}]
 
   function handleOnChange(e) {
     setObjeto({
@@ -48,9 +53,10 @@ function App() {
         <br />
 
       </form>
+      <Form></Form>
     </main>
-    <Objetos  test={objeto}></Objetos>
-    <Footer></Footer>
+    <Result  test={objeto}></Result>
+    {footer? <Footer></Footer> : null}
     </div>
     </>
   )
