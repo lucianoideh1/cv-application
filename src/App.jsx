@@ -1,3 +1,4 @@
+import About from "./components/About"
 import Header from "./components/Header"
 import Objetos from "./components/Objetos"
 import { useState } from "react"
@@ -19,6 +20,8 @@ function App() {
   return (
     <>
     <Header></Header>
+    <div className="container">
+    <About></About>
     <main>
       <form>
         <label>Nombre: 
@@ -46,6 +49,7 @@ function App() {
       </form>
     </main>
     <Objetos  test={objeto}></Objetos>
+    </div>
     </>
   )
 }
