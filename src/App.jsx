@@ -1,4 +1,5 @@
 import About from "./components/About"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Objetos from "./components/Objetos"
 import { useState } from "react"
@@ -49,6 +50,7 @@ function App() {
       </form>
     </main>
     <Objetos  test={objeto}></Objetos>
+    <Footer></Footer>
     </div>
     </>
   )
