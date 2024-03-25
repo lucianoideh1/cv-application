@@ -16,11 +16,17 @@ function App() {
   // past_experiences:[{},{},{}]
   // study_experience:[{},{},{}]
 
-  function handleOnChange(e) {
+  function handleChange(e) {
     setObjeto({
       ...objeto,
       [e.target.name]:e.target.value
     })
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    const result = { name, email, phone }
+    console.log(result)
   }
 
   return (
@@ -29,31 +35,12 @@ function App() {
     <div className="container">
     <About></About>
     <main>
-      <form>
-        <label>Nombre: 
-          <input type="text" 
-          name="name"
-          value={objeto.name}
-          onChange={handleOnChange}/>
-        </label>
-        <br />
-        <label>Email: 
-          <input type="email" 
-          name="email"
-          value={objeto.email}
-          onChange={handleOnChange}/>
-        </label>
-        <br />
-        <label>Phone: 
-          <input type="number" 
-          name="phone"
-          value={objeto.phone}
-          onChange={handleOnChange}/>
-        </label>
-        <br />
 
-      </form>
-      <Form></Form>
+      <Form objeto={objeto}
+            setObjeto={setObjeto} 
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+      ></Form>
     </main>
     <Result  test={objeto}></Result>
     {footer? <Footer></Footer> : null}
