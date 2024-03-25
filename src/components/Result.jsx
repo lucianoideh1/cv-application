@@ -1,5 +1,5 @@
 const Result = (test) => {
-    console.log(test)
+    // console.log(test)
     const { name, email, phone }  = test.test
     return (
     <div className="results">

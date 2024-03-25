@@ -1,29 +1,32 @@
-const Form = (props) => {
+const Form = ({ objeto, setObjeto, handleChange, handleSubmit}) => {
+
+ const { name, email, phone} = objeto
+
   return (
-    <div>Form
-           <form onSubmit={props.handleOnSubmit}>
+    <div>
+           <form onSubmit={handleSubmit}>
         <label>Nombre: 
           <input type="text" 
           name="name"
-          value={props.objeto.name}
-          onChange={props.handleOnChange}/>
+          value={name}
+          onChange={handleChange}/>
         </label>
         <br />
         <label>Email: 
           <input type="email" 
           name="email"
-          value={props.objeto.email}
-          onChange={props.handleOnChange}/>
+          value={email}
+          onChange={handleChange}/>
         </label>
         <br />
         <label>Phone: 
           <input type="number" 
           name="phone"
-          value={props.objeto.phone}
-          onChange={props.handleOnChange}/>
+          value={phone}
+          onChange={handleChange}/>
         </label>
         <br />
-
+      <input type="submit" value="Submit" />
       </form>
     </div>
   )
