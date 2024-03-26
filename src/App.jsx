@@ -11,6 +11,19 @@ function App() {
     name:"nombre",
     email:"nombre@gmail.com",
     phone:1122334455,
+    past_experiences:{
+      company_name:"",
+      position_title:"",
+      responsability:"",
+      work_start:"",
+      work_end:""
+    },
+    studies:{
+      school_name:"",
+      study_title:"",
+      start:"",
+      end:""
+    }
   })
   
   // past_experiences:[{},{},{}]
@@ -71,7 +84,11 @@ function App() {
               <input type="text" />
             </label>
             <br />
-            <label>Period:
+            <label>Start:
+              <input type="text" />
+            </label>
+            <br />
+            <label>End:
               <input type="text" />
             </label>
           </fieldset>
@@ -86,10 +103,13 @@ function App() {
               <input type="text" />
             </label>
             <br />
-            <label>Time of study:
+            <label>Start:
               <input type="text" />
             </label>
             <br />
+            <label>End:
+              <input type="text" />
+            </label>
           </fieldset>
           <input type="submit" value="Submit" />
 
