@@ -37,3 +37,10 @@ body{
   /* width: clamp(300px,600px,900px); */
   border: 1px solid red;
 }
+
+main {
+  display: flex;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 2rem;
+}

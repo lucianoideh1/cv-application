@@ -1,12 +1,12 @@
 import About from "./components/About"
 import Footer from "./components/Footer"
-import Form from "./components/Form"
 import Header from "./components/Header"
 import Result from "./components/Result"
 import { useState } from "react"
 function App() {
 
   const footer = false
+
   const [objeto, setObjeto] = useState({
     name:"nombre",
     email:"nombre@gmail.com",
@@ -23,11 +23,6 @@ function App() {
     })
   }
 
-  function handleSubmit(e) {
-    e.preventDefault()
-    const result = { name, email, phone }
-    console.log(result)
-  }
 
   return (
     <>
@@ -35,14 +30,32 @@ function App() {
     <div className="container">
     <About></About>
     <main>
-
-      <Form objeto={objeto}
-            setObjeto={setObjeto} 
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-      ></Form>
+          <form onSubmit={e => {e.preventDefault();console.log(e)}}>
+              <label>Nombre: 
+                <input type="text" 
+                name="name"
+                value={objeto.name}
+                onChange={handleChange}/>
+              </label>
+            <br />
+              <label>Email: 
+                <input type="email" 
+                name="email"
+                value={objeto.email}
+                onChange={handleChange}/>
+              </label>
+            <br />
+              <label>Phone: 
+                <input type="number" 
+                name="phone"
+                value={objeto.phone}
+                onChange={handleChange}/>
+              </label>
+            <br />
+          <input type="submit" value="Submit" />
+          </form>
+    <Result  objeto={objeto}></Result>
     </main>
-    <Result  test={objeto}></Result>
     {footer? <Footer></Footer> : null}
     </div>
     </>
