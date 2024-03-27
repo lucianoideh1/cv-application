@@ -47,7 +47,6 @@ function App() {
     <>
     <Header></Header>
     <div className="container">
-    <About></About>
     <Results2></Results2>
     <main>
           <form onSubmit={e => {e.preventDefault();console.log(e)}}>
@@ -136,6 +135,7 @@ function App() {
     {/* <Result  objeto={objeto}></Result> */}
     </main>
     {completedForm? <Result onSubmit={handleComplete}></Result> : null}
+    <About></About>
     <Footer></Footer>
     </div>
     </>

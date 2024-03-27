@@ -7,10 +7,13 @@ const About = () => {
         <p className="about-title">
         About
         </p>
-        <p className="about-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat amet reprehenderit dolore numquam sed similique officia rerum porro fugit cumque!
-        </p>
-        <a href="#" className="about-learn-more">learn more</a>
+        <article className="about-description">
+          <p className="about-description">
+            This was developed based on a learning project from the React.js course inside <a href="#">TheOdinProject</a>.
+          </p>
+          <p>The topics learned include mainly the use of state and passing props between components.</p>
+        </article>
+        <a href="#" className="about-learn-more">See portfolio</a>
         </div>
         <div className="about-img-placeholder"></div>
     </div>
