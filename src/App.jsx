@@ -2,6 +2,7 @@ import About from "./components/About"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Result from "./components/Result"
+import Results2 from "./components/Results2"
 import { useState } from "react"
 function App() {
 
@@ -47,12 +48,14 @@ function App() {
     <Header></Header>
     <div className="container">
     <About></About>
+    <Results2></Results2>
     <main>
           <form onSubmit={e => {e.preventDefault();console.log(e)}}>
-          <legend>Personal info</legend>
             <fieldset>
+          <legend>Personal info</legend>
               <legend>General info</legend>
               <label>Nombre: 
+                <br />
                 <input type="text" 
                 name="name"
                 value={objeto.name}
@@ -60,6 +63,7 @@ function App() {
               </label>
             <br />
               <label>Email: 
+              <br />
                 <input type="email" 
                 name="email"
                 value={objeto.email}
@@ -67,6 +71,7 @@ function App() {
               </label>
             <br />
               <label>Phone: 
+              <br />
                 <input type="number" 
                 name="phone"
                 value={objeto.phone}
@@ -78,22 +83,27 @@ function App() {
           <fieldset>
             <legend>Past experiences</legend>
             <label>Company name:
+            <br />
               <input type="text" />
             </label>
             <br />
             <label>Position title:
+            <br />
               <input type="text" />
             </label>
             <br />
             <label>Responability:
+            <br />
               <input type="text" />
             </label>
             <br />
             <label>Start:
+            <br />
               <input type="text" />
             </label>
             <br />
             <label>End:
+            <br />
               <input type="text" />
             </label>
           </fieldset>
@@ -101,18 +111,22 @@ function App() {
           <fieldset>
             <legend>Studies</legend>
             <label>School name:
+            <br />
               <input type="text" />
             </label>
             <br />
             <label>Title of study:
+            <br />
               <input type="text" />
             </label>
             <br />
             <label>Start:
+            <br />
               <input type="text" />
             </label>
             <br />
             <label>End:
+            <br />
               <input type="text" />
             </label>
           </fieldset>
