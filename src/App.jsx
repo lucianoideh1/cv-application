@@ -1,11 +1,16 @@
 import About from "./components/About"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
-// import Result from "./components/Result"
+import Result from "./components/Result"
 import { useState } from "react"
 function App() {
 
-  const footer = false
+  const [completedForm, setCompletedForm] = useState(false)
+
+  function handleComplete(prevState){
+    setCompletedForm(!prevState)
+  }
+
 
   const [objeto, setObjeto] = useState({
     name:"nombre",
@@ -116,7 +121,8 @@ function App() {
           </form>
     {/* <Result  objeto={objeto}></Result> */}
     </main>
-    {footer? <Footer></Footer> : null}
+    {completedForm? <Result onSubmit={handleComplete}></Result> : null}
+    <Footer></Footer>
     </div>
     </>
   )
