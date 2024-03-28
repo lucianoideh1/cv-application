@@ -6,7 +6,7 @@ const Results2 = () => {
         <div className="general-info">
             <p className="full-name">Full Complete Name</p>
             <p className="position">Role Position</p>
-        <p className="contact-info">emaildot@gmail.com - 112233445566</p>
+        <p className="contact-info">emaildot@gmail.com - 1122334455</p>
 
         </div>
         <div className="work-experience">

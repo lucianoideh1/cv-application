@@ -47,7 +47,6 @@ function App() {
     <>
     <Header></Header>
     <div className="container">
-    <Results2></Results2>
     <main>
           <form onSubmit={e => {e.preventDefault();console.log(e)}}>
             <fieldset>
@@ -133,6 +132,7 @@ function App() {
 
           </form>
     {/* <Result  objeto={objeto}></Result> */}
+    <Results2></Results2>
     </main>
     {completedForm? <Result onSubmit={handleComplete}></Result> : null}
     <About></About>

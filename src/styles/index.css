@@ -26,7 +26,7 @@ body{
   margin: 0;
 }
 .container{
-  max-width: 1200px;
+  max-width: 100%;
   border: 1px solid #535bf2;
   margin: 0 auto;
   display: flex;
@@ -39,9 +39,10 @@ body{
 }
 
 main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   border: 1px solid black;
-  margin: 0 auto;
   padding: 2rem;
   font-size: 1.1rem;
 }
