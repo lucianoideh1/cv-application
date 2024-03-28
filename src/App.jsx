@@ -14,22 +14,19 @@ function App() {
 
 
   const [objeto, setObjeto] = useState({
-    name:"nombre",
-    email:"nombre@gmail.com",
+    name:"Full Complete Name",
+    position:"Role Position",
+    email:"emaildot@gmail.com",
     phone:1122334455,
-    past_experiences:{
-      company_name:"",
-      position_title:"",
-      responsability:"",
-      work_start:"",
-      work_end:""
-    },
-    studies:{
-      school_name:"",
-      study_title:"",
-      start:"",
-      end:""
-    }
+      company_name:"position title",
+      position_title:"company name",
+      responsability:"responsability",
+      work_start:"start",
+      work_end:"end",
+    school_name:"school name",
+    study_title:"title",
+    start:"start",
+    end:"end"
   })
   
   // past_experiences:[{},{},{}]
@@ -60,6 +57,14 @@ function App() {
                 onChange={handleChange}/>
               </label>
             <br />
+            <label>Role Position: 
+                <br />
+                <input type="text" 
+                name="position"
+                value={objeto.position}
+                onChange={handleChange}/>
+              </label>
+            <br />
               <label>Email: 
               <br />
                 <input type="email" 
@@ -82,27 +87,42 @@ function App() {
             <legend>Past experiences</legend>
             <label>Company name:
             <br />
-              <input type="text" />
+              <input type="text"
+              name="company_name"
+              value={objeto.company_name}
+              onChange={handleChange}/> 
             </label>
             <br />
             <label>Position title:
             <br />
-              <input type="text" />
+              <input type="text" 
+              name="position_title"
+              value={objeto.position_title}
+              onChange={handleChange}/> 
             </label>
             <br />
             <label>Responability:
             <br />
-              <input type="text" />
+              <input type="text"
+               name="responsability"
+               value={objeto.responsability}
+               onChange={handleChange}/>
             </label>
             <br />
             <label>Start:
             <br />
-              <input type="text" />
+              <input type="text" 
+               name="work_start"
+               value={objeto.work_start}
+               onChange={handleChange}/>
             </label>
             <br />
             <label>End:
             <br />
-              <input type="text" />
+              <input type="text" 
+               name="work_end"
+               value={objeto.work_end}
+               onChange={handleChange}/>
             </label>
           </fieldset>
 
@@ -110,22 +130,34 @@ function App() {
             <legend>Studies</legend>
             <label>School name:
             <br />
-              <input type="text" />
+              <input type="text" 
+               name="school_name"
+               value={objeto.school_name}
+               onChange={handleChange}/>
             </label>
             <br />
             <label>Title of study:
             <br />
-              <input type="text" />
+              <input type="text" 
+               name="study_title"
+               value={objeto.study_title}
+               onChange={handleChange}/>
             </label>
             <br />
             <label>Start:
             <br />
-              <input type="text" />
+              <input type="text" 
+               name="start"
+               value={objeto.start}
+               onChange={handleChange}/>
             </label>
             <br />
             <label>End:
             <br />
-              <input type="text" />
+              <input type="text"
+               name="end"
+               value={objeto.end}
+               onChange={handleChange}/>
             </label>
           </fieldset>
           <input type="submit" value="Submit" />
