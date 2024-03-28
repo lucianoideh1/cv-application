@@ -1,17 +1,23 @@
 nav {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
     gap: 1rem;
     background-color: var(--clr-black);
     color: var(--clr-white);
     font-weight: 700;
     padding: .8rem;
-    justify-content: space-between;
+    text-align: center;
+    /* justify-content: space-between; */
 }
+
 nav ul{
     padding: 0;
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 nav ul li{
     list-style: none;

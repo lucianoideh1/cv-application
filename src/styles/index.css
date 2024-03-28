@@ -35,6 +35,8 @@ body{
 }
 .about-section{
   /* width: clamp(300px,600px,900px); */
+  max-width: 1200px;
+  margin: 0 auto;
   border: 1px solid red;
 }
 
