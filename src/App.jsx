@@ -1,7 +1,7 @@
 import About from "./components/About"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
-import Result from "./components/Result"
+// import Result from "./components/Result"
 import Results2 from "./components/Results2"
 import { useState } from "react"
 function App() {
@@ -42,7 +42,8 @@ function App() {
     <main>
           <form onSubmit={e => {
             e.preventDefault();
-            setCompletedForm(!completedForm)
+            // setCompletedForm(!completedForm)
+            setCompletedForm(true)
           }}
           >
             <fieldset>
@@ -162,10 +163,11 @@ function App() {
           <input type="submit" value="Submit" />
 
           </form>
-    {/* <Result  objeto={objeto}></Result> */}
-    <Results2 objeto={objeto}></Results2>
+    {/* <Results2 objeto={objeto}></Results2> */}
+    {completedForm? <Results2 objeto={objeto}></Results2> : null}
+
     </main>
-    {completedForm? <Result objeto={objeto}></Result> : null}
+    {/* {completedForm? <Result objeto={objeto}></Result> : null} */}
     <About></About>
     <Footer></Footer>
     </div>

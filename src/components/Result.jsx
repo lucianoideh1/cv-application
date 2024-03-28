@@ -1,6 +1,6 @@
 const Result = (objeto) => {
 
-    const { name, email, phone }  = objeto
+    const { name, email, phone }  = objeto.objeto
     return (
     <div className="results">
         <ul>
