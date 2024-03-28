@@ -8,11 +8,6 @@ function App() {
 
   const [completedForm, setCompletedForm] = useState(false)
 
-  function handleComplete(prevState){
-    setCompletedForm(!prevState)
-  }
-
-
   const [objeto, setObjeto] = useState({
     name:"Full Complete Name",
     position:"Role Position",
@@ -45,7 +40,11 @@ function App() {
     <Header></Header>
     <div className="container">
     <main>
-          <form onSubmit={e => {e.preventDefault();console.log(e)}}>
+          <form onSubmit={e => {
+            e.preventDefault();
+            setCompletedForm(!completedForm)
+          }}
+          >
             <fieldset>
           <legend>Personal info</legend>
               <legend>General info</legend>
@@ -164,9 +163,9 @@ function App() {
 
           </form>
     {/* <Result  objeto={objeto}></Result> */}
-    <Results2></Results2>
+    <Results2 objeto={objeto}></Results2>
     </main>
-    {completedForm? <Result onSubmit={handleComplete}></Result> : null}
+    {completedForm? <Result objeto={objeto}></Result> : null}
     <About></About>
     <Footer></Footer>
     </div>

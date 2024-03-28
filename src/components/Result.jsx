@@ -1,6 +1,6 @@
 const Result = (objeto) => {
-    // console.log(test)
-    const { name, email, phone }  = objeto.objeto
+
+    const { name, email, phone }  = objeto
     return (
     <div className="results">
         <ul>
@@ -11,5 +11,6 @@ const Result = (objeto) => {
     </div>
   )
 }
+
 
 export default Result
