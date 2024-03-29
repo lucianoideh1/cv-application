@@ -3,7 +3,7 @@
 }
 .social-media-links {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
 }
@@ -17,5 +17,6 @@
     letter-spacing: .1rem;
 }
 .social-media-links li a:hover{
-    color: rgb(112, 219, 252);
+    color: rgb(75, 108, 255);
+
 }

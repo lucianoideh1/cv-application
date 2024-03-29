@@ -141,8 +141,8 @@ function App() {
     {completedForm? <Results2 objeto={objeto}></Results2> : null}
 
     </main>
-    <About id="about"></About>
-    <Footer id="footer"></Footer>
+    <About></About>
+    <Footer></Footer>
 
     </div>
     </>

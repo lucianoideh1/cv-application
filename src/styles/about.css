@@ -1,18 +1,28 @@
 .about-section{
-    padding:1rem;
+    padding: 2rem 3rem 6rem 3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(2,60ch);
+    /* gap: 3rem; */
+    justify-content: center;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+.about-section a {
+    color: rgb(75, 108, 255);
+}
+.about-text{
+    padding: 1rem;
+
 }
 .about-title{
     font-size: 1.8rem;
     font-weight: 700;
 }
 .about-description{
-    max-width: 60ch;
+    max-width: 50ch;
 }
 .about-img-placeholder{
-    background-color: gray;
-    padding: 0 3rem ;
+    background-color: rgb(231, 231, 231);
     border-radius: .5rem;
+    max-width: 646px;
 }
