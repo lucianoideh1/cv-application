@@ -40,6 +40,8 @@ function App() {
     <Header></Header>
     <div className="container">
     <main id="main">
+    <About></About>
+
           <form onSubmit={e => {
             e.preventDefault();
             // setCompletedForm(!completedForm)
@@ -141,7 +143,6 @@ function App() {
     {completedForm? <Results2 objeto={objeto}></Results2> : null}
 
     </main>
-    <About></About>
     <Footer></Footer>
 
     </div>

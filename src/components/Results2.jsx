@@ -13,7 +13,7 @@ const Results2 = (objeto) => {
         <div className="general-info">
             <p className="full-name">{name}</p>
             <p className="position">{position}</p>
-        <p className="contact-info">{email} - {phone}</p>
+             <p className="contact-info">{email} - {phone}</p>
 
         </div>
         <div className="work-experience">
