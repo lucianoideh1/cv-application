@@ -13,10 +13,13 @@
 }
 .social-media-links li a{
     color: var(--clr-white);
+    color: rgb(75, 108, 255);
     text-decoration: none;
     letter-spacing: .1rem;
+    transition:all .5s ease-in-out;
+
 }
 .social-media-links li a:hover{
-    color: rgb(75, 108, 255);
-
+    color: rgb(58, 82, 190);
+    letter-spacing: .3rem;
 }
