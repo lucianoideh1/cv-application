@@ -1,8 +1,7 @@
 import About from "./components/About"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
-// import Result from "./components/Result"
-import Results2 from "./components/Results2"
+import Result from "./components/Result"
 import { useState } from "react"
 function App() {
 
@@ -23,7 +22,7 @@ function App() {
     start:"start",
     end:"end"
   })
-  
+  // could flatten the array and link the children
   // past_experiences:[{},{},{}]
   // study_experience:[{},{},{}]
 
@@ -44,7 +43,6 @@ function App() {
 
           <form onSubmit={e => {
             e.preventDefault();
-            // setCompletedForm(!completedForm)
             setCompletedForm(true)
           }}
           >
@@ -140,7 +138,7 @@ function App() {
           </fieldset>
           <input type="submit" value="Submit" />
           </form>
-    {completedForm? <Results2 objeto={objeto}></Results2> : null}
+    {completedForm? <Result objeto={objeto}></Result> : null}
 
     </main>
     <Footer></Footer>

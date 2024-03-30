@@ -1,5 +1,4 @@
 nav {
-    /* display: flex; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -10,7 +9,6 @@ nav {
     font-weight: 700;
     padding: .8rem;
     text-align: center;
-    /* justify-content: space-between; */
 }
 
 nav ul{
