@@ -1,4 +1,4 @@
-import "../styles/Result.css"
+import "../styles/result.css"
 
 const Result = (objeto) => {
 

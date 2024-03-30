@@ -23,3 +23,9 @@
     color: rgb(58, 82, 190);
     letter-spacing: .3rem;
 }
+
+@media (max-width:600px){
+    .social-media-links{
+        flex-direction: column;
+    }
+}
