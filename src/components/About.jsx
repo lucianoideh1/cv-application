@@ -13,9 +13,11 @@ const About = () => {
           </p>
           <p>The topics learned include mainly the use of state and passing props between components.</p>
         </article>
-        <a href="#" className="about-learn-more">See portfolio</a>
+        <a href="https://github.com/lucianoideh1" className="about-learn-more" target="_blank">See portfolio</a>
         </div>
-        <div className="about-img-placeholder"></div>
+       
+          <img src="project.png" alt="project" />
+      
     </div>
   )
 }
