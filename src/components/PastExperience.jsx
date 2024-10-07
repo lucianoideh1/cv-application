@@ -12,7 +12,6 @@ const PastExperience = ({props}) => {
 
   return (
     <div className="work-experience">
-        <h1>past experiences</h1>
     <p className="section-title">Experience</p>
     <p>{position_title}</p>
     <p>{company_name}</p>
