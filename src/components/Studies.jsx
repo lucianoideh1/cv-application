@@ -1,6 +1,14 @@
 import PropTypes from  'prop-types'
 
-const Studies = ({title_study, school_name, start, end}) => {
+const Studies = ({props}) => {
+
+    const {
+        title_study,
+        school_name,
+        start,
+        end
+    } = props
+
   return (
     <div className="studies">
     <p className="section-title">Certificates</p>
@@ -10,6 +18,11 @@ const Studies = ({title_study, school_name, start, end}) => {
 </div>
   )
 }
+
+Studies.propTypes = {
+    props: PropTypes.object
+}
+
 
 Studies.propTypes = {
     title_study: PropTypes.string,

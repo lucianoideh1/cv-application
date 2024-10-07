@@ -1,6 +1,7 @@
 import "../styles/result.css"
 import PastExperience from "./PastExperience"
 import PropTypes from  'prop-types'
+import Studies from "./Studies"
 
 
 const Result = ({props}) => {
@@ -11,6 +12,7 @@ const Result = ({props}) => {
     work_end, responsability,
     school_name, title_study, start, end
   } = props
+
   return (
     <div className="results-2">
         <div className="general-info">
@@ -20,12 +22,7 @@ const Result = ({props}) => {
 
         </div>
         <PastExperience props={{position_title, company_name, work_start, work_end, responsability}}></PastExperience>
-        <div className="studies">
-            <p className="section-title">Certificates</p>
-            <p>{title_study}</p>
-            <p>{school_name}</p>
-            <p>{start} - {end}</p>
-        </div>
+        <Studies props={{title_study, school_name, start, end}}></Studies>
     </div>
   )
 }
