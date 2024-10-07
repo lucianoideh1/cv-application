@@ -138,7 +138,7 @@ function App() {
           </fieldset>
           <input type="submit" value="Submit" />
           </form>
-    {completedForm? <Result objeto={objeto}></Result> : null}
+    {completedForm? <Result props={{...objeto}}></Result> : null}
 
     </main>
     <Footer></Footer>
